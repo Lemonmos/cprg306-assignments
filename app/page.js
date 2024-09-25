@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <h1>CPRG 306: Web Development 2 - Assignments</h1>
       {weeks.map((week) => (
-        <li className="hover:text-green-500 text-pink-500 font-bold">
+        <li key= {week} className="hover:text-green-500 text-pink-500 font-bold">
         <Link href={`/week-${week}`}>Week-{week}</Link>
         </li>
     ))}

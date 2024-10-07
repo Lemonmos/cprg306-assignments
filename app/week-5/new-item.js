@@ -22,18 +22,20 @@ export default function NewItem() {
         
         const handleSubmit = (event) => {
             event.preventDefault();
+
+            const item = {
+                name,
+                category,
+                quantity
+            }
+            
+            console.log(item);
             alert("Added name: " + name + " category: " + category + " quantity: " + quantity);
             reset();
         }
 
         const printItem = () => {
             console.log(name, category, quantity);
-        }
-
-        const item = {
-            name,
-            category,
-            quantity
         }
 
         const reset = () => {
